@@ -10,8 +10,8 @@ source ~/.bashrc
 conda activate research
 
 python ../joint_train.py \
-    --data_dir ./data/boston/ \
-    --output_dir ./results/joint/ \
+    --data_dir ../data/boston/ \
+    --output_dir ../results/joint/ \
     --max_iter 100 \
     --gp_constant_1 0.014 \
     --gp_noise 0.1 \
