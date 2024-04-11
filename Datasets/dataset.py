@@ -20,6 +20,9 @@ class Dataset():
         with rio.open(os.path.join(dataset_path, f'{city}_ndvi.tif')) as src:
             self.ndvi = src.read(1)
 
+            # Truncate values for NDVI
+            self.ndvi[self.ndvi < 0] = 0
+
         # self.ndvi = np.flipud(ndvi)
 
         with rio.open(os.path.join(dataset_path, f'{city}_albedo.tif')) as src:
