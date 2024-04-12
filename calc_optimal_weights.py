@@ -43,7 +43,7 @@ def main(args):
     ALBEDO_LS = range(args.albedo_ls_vals[0], args.albedo_ls_vals[1])
 
     # Read in the data
-    data = load_dataset(args.data_dir, args.window_size)
+    data = load_dataset(args.data_dir, args.window_size, args.city)
 
     # Create K-folds of the data
     folds = create_folds(data, args.k_folds * args.k_folds_size)
@@ -318,6 +318,14 @@ if __name__ == "__main__":
     # Create the output arguments
     parser.add_argument("--output_dir", type=str, help="Path to the output directory")
     parser.add_argument("--log_level", type=str, default="INFO", help="Logging level")
+
+    # Add an argument for the city name
+    parser.add_argument(
+        "--city",
+        type=str,
+        default="boston",
+        help="The directory to save the output.",
+    )
 
     # Parse the arguments
     args = parser.parse_args()
