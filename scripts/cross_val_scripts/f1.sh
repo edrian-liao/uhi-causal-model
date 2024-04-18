@@ -9,9 +9,9 @@
 source ~/.bashrc
 conda activate research
 
-python ../calc_optimal_weights.py \
-    --data_dir ../data/boston/ \
-    --output_dir ../results/cv/f1/ \
+python ../../calc_optimal_weights.py \
+    --data_dir ../../data/boston/ \
+    --output_dir ../../results/cv/f1/ \
     --k_folds 5 \
     --k_folds_size 10 \
     --l2_alpha 1 \

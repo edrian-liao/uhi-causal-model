@@ -10,8 +10,8 @@ source ~/.bashrc
 conda activate research
 
 python ../../calc_optimal_weights.py \
-    --data_dir ../data/boston/ \
-    --output_dir ../results/cv/f6/ \
+    --data_dir ../../data/boston/ \
+    --output_dir ../../results/cv/f6/ \
     --k_folds 5 \
     --k_folds_size 10 \
     --l2_alpha 0.1 \
