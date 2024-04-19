@@ -4,3 +4,5 @@ data/durham
 nlcd/*
 notebooks/google_earth_engine_demo.ipynb
 notebooks/clean_nlcd.ipynb
+# results/cv
+scripts/cross_val_scripts/*.err
