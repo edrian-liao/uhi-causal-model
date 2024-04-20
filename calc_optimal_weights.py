@@ -324,7 +324,7 @@ if __name__ == "__main__":
         "--city",
         type=str,
         default="boston",
-        help="The directory to save the output.",
+        help="The city where the data is being collected from.",
     )
 
     # Parse the arguments
