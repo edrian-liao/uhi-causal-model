@@ -124,7 +124,8 @@ def main(args):
                     X_train, ridge_y
                 )
 
-                train_preds = y_train - lm.predict(X_train)
+                # train_preds = y_train - lm.predict(X_train)
+                train_preds = lm.predict(X_train)
 
                 train_residuals = y_train - train_preds
 
