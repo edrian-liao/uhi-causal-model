@@ -12,10 +12,10 @@ python ../bootstrap_coefficients.py \
     --data_dir ../data/boston/ \
     --output_dir ../results/bootstrap/ \
     --num_blocks 50 \
-    --l2_alpha 5 \
-    --ndvi_ls 29 \
-    --albedo_ls 17 \
-    --gp_noise 1e-4 \
+    --l2_alpha 0.1 \
+    --ndvi_ls 17 \
+    --albedo_ls 4 \
+    --gp_noise 1e-2 \
     --gp_constant_1 0.5 \
     --gp_constant_2 3e-7 \
     --gp_length_scale 115 \

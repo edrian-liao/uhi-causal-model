@@ -6,3 +6,4 @@ notebooks/google_earth_engine_demo.ipynb
 notebooks/clean_nlcd.ipynb
 scripts/cross_val_scripts/*.err
 results/*
+temp/*
