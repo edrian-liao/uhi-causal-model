@@ -36,7 +36,7 @@ def standardize_data(x_train, x_val, y_train, y_val, scaler="minmax"):
     return x_train, x_val, y_train, y_val, shift, scale, train_shift, train_scale
 
 
-def generate_data(data, idx, ndvi_ls, albedo_ls, window_size, use_coords):
+def  generate_data(data, idx, ndvi_ls, albedo_ls, window_size, use_coords):
     """This function generates the data based on the given length scale and window size"""
 
     dist_matrix = np.sqrt(

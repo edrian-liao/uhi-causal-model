@@ -43,6 +43,8 @@ class SpatialDataset:
         self.temp = temp
         self.nlcd = self._calc_nlcd_percentage(nlcd, nlcd_ws)
         self.ndvi = ndvi
+        # Truncate values for NDVI
+        self.ndvi[self.ndvi < 0] = 0
         self.albedo = albedo
 
         assert ndvi.shape == albedo.shape
