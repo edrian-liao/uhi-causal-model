@@ -1,1 +1,0 @@
-Namespace(data_dir='../../data/boston/', window_size=25, use_coords=False, l2_alpha=1.0, k_folds=5, k_folds_size=10, scaler='standard', max_iter=10, ndvi_ls_vals=[1, 30], albedo_ls_vals=[1, 20], gp_constant_1=0.5, gp_constant_2=3e-07, gp_noise=0.01, gp_length_scale=115.0, gp_sigma_0=0.1, n_samples=1000, output_dir='../../results/cv/f9/', log_level='INFO', city='boston')
